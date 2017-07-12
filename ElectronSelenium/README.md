@@ -4,6 +4,8 @@ This is an Electron app with Selenium
 
 This app allows you to use selenium in the developer tools console so you can fine tune your browser automation scripts
 
+To start, type `npm start`
+
 The application does the following
 1. Open Chrome to Google
 2. Enters `tuts+ code` in the search box
