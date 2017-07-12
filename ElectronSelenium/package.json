@@ -1,0 +1,17 @@
+{
+  "name": "electron-selenium",
+  "version": "0.0.1",
+  "description": "Selenium Electron App",
+  "main": "main.js",
+  "author": "JDelemar",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^1.6.11"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^3.4.0"
+  }
+}
