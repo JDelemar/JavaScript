@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link href="../../assets/lib/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/lib/jquery-ui/1.10.2/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" href="defaults.css" />
+    </head>
+    <body>
+    </body>
+    <!-- Fix electron jQuery is not defined and allows code to be run in browser and electron -->
+    <!-- source: https://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined -->
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="../../assets/lib/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../assets/lib/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+    <script src="index.js"></script>
+</html>
+

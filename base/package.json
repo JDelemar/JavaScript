@@ -1,0 +1,19 @@
+{
+  "name": "electron-base",
+  "version": "1.0.0",
+  "description": "Base multi-OS Electron application for testing multiple applications",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "James Delemar <me@jdelemar.com>",
+  "scripts": {
+    "start": "electron ./app/base/main.js",
+    "sharepoint": "electron ./app/sharepoint/main.js",
+    "injector": "electron ./app/injector/main.js",
+    "resizeable": "electron ./app/resizeable/main.js",
+    "resize-inject": "electron ./app/resize-inject/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9"
+  }
+}
