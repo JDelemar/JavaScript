@@ -13,7 +13,12 @@ ipcRenderer.on('alert-webview', function(event, data){
 });
 
 function runInWebView() {
-    return { title: document.getElementsByTagName('title')[0].innerText };
+    // just in case title is not found
+    var htmlCollection = document.getElementsByTagName('title');
+    var title = 'Title not found';
+    if (htmlCollection.length > 0)
+        title = htmlCollection[0].innerText;    
+    return { title: title };
 }
 function runInSPWebView() {
     var results;
