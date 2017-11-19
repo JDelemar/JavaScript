@@ -10,9 +10,15 @@ $(document).ready(function() {
     
 });
 
+/**
+ * Display webview for site(s), returns true if no errors, false if error encountered
+ * @param {string[]} arySites - String of sites to display in webviews
+ * @returns {boolean} Completed with no errors
+ */
 function displayWebViews(arySites) {
     if(typeof arySites === 'undefined' || Object.prototype.toString.call(arySites) !== '[object Array]') return false;
 
+    /** Generate panel string */
     var generatePanel = function generatePanel() {
         var num = $('webview').length + 1;
         var templatePanel = `
@@ -64,6 +70,10 @@ function displayWebViews(arySites) {
     return true;
 }
 
+/**
+ * Add/activate panel functions
+ * source: {@link http://where/did/I/get/this/from/again?}
+ */
 function addPanelFunctions() {
     // Add drag and resize option to panel
     $(".toolbox-tools").draggable({
