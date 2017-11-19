@@ -1,12 +1,18 @@
 
 $(document).ready(function() {
-    displayWebViews();
+    var arySites =[
+        'https://github.com',
+        'https://google.com'
+    ];
     
-    addPanelFunctions();
+    if (displayWebViews(arySites))
+        addPanelFunctions();
     
 });
 
-function displayWebViews() {
+function displayWebViews(arySites) {
+    if(typeof arySites === 'undefined' || Object.prototype.toString.call(arySites) !== '[object Array]') return false;
+
     var generatePanel = function generatePanel() {
         var num = $('webview').length + 1;
         var templatePanel = `
@@ -22,10 +28,6 @@ function displayWebViews() {
             //<webview id="webview${num}" style="width: 100%; height: 100%" src="${src}" preload="./insert.js" class="resizable" class="panel panel-primary draggable-panel toolbar-panel ui-draggable ui-resizable" ></webview>
         return templatePanel;
     };
-    var arySites =[
-        'https://github.com',
-        'https://google.com'
-    ];
     arySites.forEach(function(siteUrl, index) {
         var $panel = $(generatePanel());
         $('body').append($panel);
@@ -58,6 +60,8 @@ function displayWebViews() {
             $(this).closest('.panel').find('span').text(event.args[0].title);
         });
     });
+
+    return true;
 }
 
 function addPanelFunctions() {
