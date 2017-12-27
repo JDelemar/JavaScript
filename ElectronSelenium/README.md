@@ -28,6 +28,8 @@ java -Dwebdriver.gecko.driver=C:\Selenium\geckodriver-v0.19.1-win32\geckodriver.
 java -Dwebdriver.gecko.driver=C:\Selenium\geckodriver-v0.19.1-win32\geckodriver.exe -Dwebdriver.chrome.driver=C:\Selenium\chromedriver_win32\chromedriver.exe -Dwebdriver.iexplorer.driver=C:\Selenium\IEDriverServer_Win32_3.8.0\IEDriverServer.exe -jar selenium-server-standalone-3.8.1.jar -role node -hub http://192.168.1.2:4444/grid/register
 ```
   
+Ensure node dependencies are installed by typing `npm install` OR `yarn`  
+  
 Start this application, type `npm start`  
   
 To connect to the hub type `http://<ip address>:<port>/grid/console` in your browser (e.g. http://192.168.1.2:4444/grid/console)  
