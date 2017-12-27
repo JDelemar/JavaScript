@@ -8,10 +8,9 @@
   "scripts": {
     "start": "electron ."
   },
-  "devDependencies": {
-    "electron": "^1.6.11"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "selenium-webdriver": "^3.4.0"
+    "electron": "^1.7.10",
+    "selenium-webdriver": "^3.6.0"
   }
 }
