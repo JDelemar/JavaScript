@@ -9,7 +9,11 @@ The application does the following
 2. Enter `selenium` in the search box and press enter  
 3. Waits for title to change  
 4. Closes the browser  
-
+  
+<br/>  
+<img src="https://github.com/JDelemar/Nodejs/blob/master/images/SeleniumGridConsole.png"/>  
+<br/>  
+  
 ## Start
 Start selenium-webdriver hub and node (this can be on the same or diferent computers)
 - In this example selenium was installed on a Windows computer in `C:\Selenium` with all drivers extracted there as well
