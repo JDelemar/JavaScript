@@ -19,7 +19,7 @@ Start selenium-webdriver hub and node (this can be on the same or diferent compu
 - In this example selenium was installed on a Windows computer in `C:\Selenium` with all drivers extracted there as well
 ```shell
 # start hub
-java -jar selenium-server-standalone-3.0.0.jar -role hub
+java -jar selenium-server-standalone-3.8.1.jar -role hub
 # this will let you know where nodes should register e.g. Nodes should register to http://192.168.1.2:4444/grid/register/
 # start firefox node - could be on remote computer
 java -Dwebdriver.gecko.driver=C:\Selenium\geckodriver-v0.19.1-win32\geckodriver.exe -jar selenium-server-standalone-3.8.1.jar -role node -hub http://192.168.1.2:4444/grid/register
