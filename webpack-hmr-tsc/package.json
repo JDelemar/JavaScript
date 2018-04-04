@@ -1,0 +1,36 @@
+{
+  "name": "webpack-hmr-tsc",
+  "version": "0.0.0-development",
+  "description": "Webpack hot module reload with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "dev": "NODE_ENV=development webpack-dev-server #npm run lint && ",
+    "prod": "npm run clean && NODE_ENV=production webpack",
+    "clean": "rimraf ./dist/*"
+  },
+  "author": "James Delemar",
+  "license": "0BSD",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "8.9.1",
+    "awesome-typescript-loader": "^3.5.0",
+    "chai": "^4.1.2",
+    "css-loader": "^0.26.1",
+    "file-loader": "0.10.0",
+    "html-webpack-plugin": "^2.26.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.6",
+    "mocha": "^5.0.1",
+    "request": "2.83.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.13.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "dependencies": {}
+}
