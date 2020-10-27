@@ -1,7 +1,6 @@
 # Javascript Projects
 
 Some Javascript Projects  
-Some projects were transferred here from older repositories. The date of last updated is included for those.
 
 ## Projects
 
